@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - StreamHub</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create an Account</h1>
+        <form id="registerForm" action="#" method="post" >
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+            </div>
+            <div class="form-group">
+                <label for="subscription">Subscription Level:</label>
+                <select id="subscription" name="subscription" required>
+                    <option value="">Select a subscription</option>
+                    <option value="basic">Basic</option>
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment" required>
+                    <option value="">Select a payment method</option>
+                    <option value="bank">Bank Transfer</option>
+                    <option value="bkash">bKash</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
