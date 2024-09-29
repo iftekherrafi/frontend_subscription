@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - StreamHub</title>
+    <link rel="stylesheet" href="../admin-css/admin-dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>StreamHub Admin</h1>
+            <nav>
+                <ul>
+                    <li><a href="../admin/dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="../admin/upload.html">Upload Video</a></li>
+                    <li><a href="../user/login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Video Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Subscription Level</th>
+                        <th>Created At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to StreamHub</td>
+                        <td>Basic</td>
+                        <td>2023-05-01</td>
+                        <td>
+                            <a href="edit.html?id=1" class="btn btn-edit">Edit</a>
+                            <button class="btn btn-delete" data-id="1">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Streaming Techniques</td>
+                        <td>Premium</td>
+                        <td>2023-05-15</td>
+                        <td>
+                            <a href="edit.html?id=2" class="btn btn-edit">Edit</a>
+                            <button class="btn btn-delete" data-id="2">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StreamHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../admin-js/admin-dashboard.js"></script>
+</body>
+</html>

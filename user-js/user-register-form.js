@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         if (validateForm()) {
-            // If the form is valid, submit it
+            // Upon validity, form submission
             console.log('Form is valid. Submitting...');
-            form.submit(); // This line actually submits the form
+            form.submit(); // Submits the form
         }
     });
 
     function validateForm() {
         let isValid = true;
 
-        // Username validation
+        // We validate the username here
         const username = document.getElementById('username');
         if (username.value.length < 3) {
             showError(username, 'Username must be at least 3 characters long');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(username);
         }
 
-        // Email validation
+        // We validate the email here
         const email = document.getElementById('email');
         if (!isValidEmail(email.value)) {
             showError(email, 'Please enter a valid email address');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(email);
         }
 
-        // Password validation
+        // We validate the password here
         const password = document.getElementById('password');
         const confirmPassword = document.getElementById('confirm-password');
         if (password.value.length < 8) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(confirmPassword);
         }
 
-        // Full name validation
+        // We validate user's fullname here
         const fullName = document.getElementById('full-name');
         if (fullName.value.trim() === '') {
             showError(fullName, 'Full name is required');
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(fullName);
         }
 
-        // Phone number validation
+        // We validate user's number here
         const phone = document.getElementById('phone');
         if (!isValidPhone(phone.value)) {
             showError(phone, 'Please enter a valid 11-digit phone number');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(phone);
         }
 
-        // Subscription validation
+        // We take subscription level input here
         const subscription = document.getElementById('subscription');
         if (subscription.value === '') {
             showError(subscription, 'Please select a subscription level');
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(subscription);
         }
 
-        // Payment method validation
+        // We take payment method input here
         const payment = document.getElementById('payment');
         if (payment.value === '') {
             showError(payment, 'Please select a payment method');
