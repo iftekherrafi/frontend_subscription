@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Simulating form submission
                 console.log('Form is valid. Submitting...');
                 // In a real application, you would use AJAX to submit the form data
-                alert('Video updated successfully!');
+                alert('Information updated successfully!');
             }
         });
     }
